@@ -52,7 +52,7 @@ RUN ./configure && make depend -j $CPU_CORE && make -j $CPU_CORE
 - build 镜像
 ```
 $ touch Dockerfile
-$ docker build -t docker.ailong.com/phecda/kaldi:ali-version
+$ docker build -t docker.ailong.com/phecda/kaldi:ali-version .         (. is needed!)
 ```
 > 一直跑到docker镜像docker.ailong.com/phecda/kaldi:ali-version建立完成
 
